@@ -1,0 +1,34 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "start": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "inversify": "^6.2.2",
+    "inversify-express-utils": "^6.5.0",
+    "inversify-inject-decorators": "^3.1.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/inversify": "^2.0.33",
+    "@types/inversify-express-utils": "^2.0.0",
+    "@types/inversify-inject-decorators": "^2.0.0",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
