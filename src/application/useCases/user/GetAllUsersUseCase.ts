@@ -9,6 +9,6 @@ export class GetAllUsersUseCase {
     ) { }
 
     async execute() {
-        return this.repo.findAll();
+        return this.repo.getAll();
     }
 }

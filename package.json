@@ -4,22 +4,22 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
-    "start": "node dist/main.js"
     "dev": "tsx watch src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^7.0.1",
+    "@prisma/client": "^5.22.0",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "inversify": "^6.2.2",
     "inversify-express-utils": "^6.5.0",
     "inversify-inject-decorators": "^3.1.0",
+    "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
@@ -29,9 +29,10 @@
     "@types/inversify-inject-decorators": "^2.0.0",
     "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
-    "prisma": "^7.0.1",
+    "prisma": "5.22",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
