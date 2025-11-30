@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
     "start": "node dist/main.js"
+    "dev": "tsx watch src/main.ts",
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^7.0.1",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "inversify": "^6.2.2",
@@ -27,6 +29,7 @@
     "@types/inversify-inject-decorators": "^2.0.0",
     "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
+    "prisma": "^7.0.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
